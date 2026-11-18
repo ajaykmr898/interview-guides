@@ -1,4 +1,4 @@
-# AGENTS.md — Interview Guides
+# Interview Guides
 
 ## Project Context
 
@@ -35,6 +35,32 @@ Definition length:
 - Simple concepts: 1–2 lines.
 - Standard concepts: 2–4 lines.
 - Complex concepts: 4–6 lines.
+
+### Revision Guide Conciseness
+
+This documentation is designed for fast technical
+interview revision, not comprehensive API reference.
+
+- Prioritize essential concepts and interview-relevant behavior.
+- Explain each concept once, without unnecessary repetition.
+- Keep P0 concepts sufficiently detailed.
+- Summarize P1 concepts using concise definitions.
+- Keep P2 concepts brief unless additional detail is essential for technical correctness.
+- Avoid excessive implementation details and rare edge cases unless they clarify a common misconception.
+- Include code examples only when they add learning value.
+- Do not sacrifice essential accuracy or mandatory editorial-plan coverage to meet a word limit.
+- Optimize chapters for quick scanning and recall.
+
+### Terminology and Acronyms
+
+- At the beginning of each chapter, provide a concise definition of its main subject.
+- Expand and define technical acronyms at their first meaningful occurrence.
+- Example: CSS (Cascading Style Sheets).
+- Prefer established English technical terminology when commonly used by software developers.
+- Examples: compiler, runtime, closure, event loop, dependency injection, change detection.
+- Use Italian for explanations, but avoid forced or unnatural translations of technical terms.
+- Keep technical terminology consistent across chapters.
+- Do not assume that basic technology names or acronyms are already understood by the reader.
 
 ### Local editorial plans
 
@@ -118,6 +144,23 @@ When editing:
 - Avoid unnecessary restructuring.
 - Do not rewrite completed sections without a reason.
 
+## AI Customization Decision Policy
+
+For AI customization, inspect existing instructions, skills, agents, tools and integrations first. Reuse a sufficient capability; otherwise choose the smallest maintainable addition and explain its scope and trade-offs.
+
+| Option | Choose when |
+| --- | --- |
+| Direct prompt | A simple, occasional task fits existing capabilities. |
+| Instructions | A rule or convention must persist; keep repository-wide rules here and narrower rules in scoped instructions. |
+| Skill | A repeatable, multi-step workflow needs defined inputs and outputs and can be reused across agents. |
+| Custom agent | A specialized role benefits from separate context, decision-making, delegation or permissions; let it reuse skills rather than wrap or duplicate their workflows. |
+| Tool or script | Deterministic execution or validation needs code; reuse an existing tool first. |
+| MCP integration | Structured access to an external service or resource is needed and available capabilities do not provide it. |
+
+Create new AI instructions, skills, custom agents, tools, scripts or MCP integrations only when explicitly requested. Keep configuration compatible with the actual runtime; do not assume portability across platforms.
+
+Local `EDITORIAL-PLAN.md` requirements apply to documentation chapters, not automatically to AI infrastructure tasks.
+
 ## Working Procedure
 
 Process one chapter at a time unless instructed otherwise.
@@ -132,7 +175,7 @@ Workflow:
 7. Validate Markdown structure and links.
 8. Inspect the final diff.
 
-Do not install dependencies or create build tools.
+Do not install dependencies, introduce build systems or create tools or scripts unless explicitly requested and needed for the task. For explicitly requested validation scripts, prefer a dependency-free implementation and reuse existing tooling.
 Do not create unrelated files.
 Do not commit or push changes unless explicitly requested.
 
