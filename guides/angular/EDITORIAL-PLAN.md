@@ -216,3 +216,22 @@ Il programma di ripasso è definito esclusivamente nel [README](README.md).
 - Best practices, pitfalls e trade-off in formato una-riga, senza duplicare il contenuto integrale.
 
 **Obiettivo:** consultazione veloce nelle ultime 1,5 ore, non un secondo manuale.
+
+## `14-todolist-end-to-end.md` — Esempio TodoList end-to-end Angular
+
+**Da coprire:**
+- **P0 — Modello e contratto REST:** usare il modello `Todo` e gli endpoint condivisi in [AGENTS.md](../../AGENTS.md); chiarire input, output, CRUD e responsabilità del server.
+- **P0 — Struttura e responsabilità / Template e componente; Service e accesso HTTP:** mostrare una struttura di progetto minima; template per vista e form, componente per stato/interazioni, service iniettabile per chiamate `HttpClient` e logica applicativa pertinente.
+- **P0 — Flusso CRUD e stato:** seguire caricamento, creazione, modifica e cancellazione dalla UI al service e ritorno; spiegare aggiornamenti dello stato e flusso dei dati.
+- **P1 — Form, errori e cleanup:** validazione dell'input, stati loading/error, gestione di risposte fallite e cleanup o cancellazione quando il componente termina o cambia richiesta.
+- **P1 — Test rappresentativo:** un test minimo del comportamento osservabile o del confine `HttpClient`, con dipendenze controllate.
+- **P2 — Struttura e responsabilità:** introdurre facade o repository soltanto se aggiungono un confine utile; spiegare il costo della separazione senza duplicare i capitoli su form, HTTP e testing.
+
+## `15-ecosystem-libraries.md` — Ecosistema librerie e convenzioni Angular
+
+**Da coprire:**
+- **P0 — Criteri di scelta e stato:** selezione curata per colloqui; distinguere API Angular built-in, strumenti ufficiali, librerie esterne e opzioni facoltative. Per ogni opzione indicare scopo, casi d'uso, alternativa e trade-off, stato, link alla documentazione ufficiale e compatibilità/manutenzione quando rilevanti; aggiornare la data **Last reviewed** dopo la verifica.
+- **P1 — Routing e navigazione; Stato e data fetching:** confrontare soluzioni Angular integrate con librerie esterne pertinenti, senza presentare preferenze della community come standard ufficiali.
+- **P1 — Form e validazione; Testing:** coprire scelte diffuse e pertinenti, con limiti e rinvii ai capitoli concettuali esistenti.
+- **P1 — Performance e sicurezza; Tooling e convenzioni:** includere strumenti e pratiche di adozione comuni, distinguendo funzioni del framework da integrazioni opzionali.
+- **P2 — Criteri di scelta e stato:** segnalare sinteticamente alternative specialistiche, vincoli di versione e segnali di manutenzione; escludere un catalogo esaustivo.

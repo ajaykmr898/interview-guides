@@ -17,6 +17,8 @@ Percorso Angular per il ripasso pre-colloquio Senior Frontend. I concetti genera
 - [Evoluzione e migrazioni Angular](11-evolution-migrations.md)
 - [AI e Copilot per Angular](12-ai-copilot-angular.md)
 - [Angular quick reference](13-quick-reference.md)
+- [Esempio TodoList end-to-end Angular](14-todolist-end-to-end.md)
+- [Ecosistema librerie e convenzioni Angular](15-ecosystem-libraries.md)
 
 ## Programma di ripasso
 

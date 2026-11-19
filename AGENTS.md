@@ -27,6 +27,8 @@ Keep each technology's chapter requirements in its local `EDITORIAL-PLAN.md`. Pr
 
 When a concept has a canonical chapter elsewhere, explain the local context briefly and use a relative Markdown link to the detailed definition. Keep technology-specific APIs and examples in their own chapters.
 
+For applicable framework and library guides, include two reusable chapter types: an **End-to-End TodoList Example** and **Ecosystem, Recommended Libraries & Conventions**. The TodoList chapters share `Todo { id: string, title: string, completed: boolean }` and a JSON REST contract: `GET /todos → Todo[]`; `POST /todos { title } → 201 Todo` (`completed` defaults to `false`); `PATCH /todos/{id} { title?, completed? } → Todo` (at least one field); `DELETE /todos/{id} → 204`. Trim and require a nonempty title, require a boolean completion value, and handle `400` invalid input, `404` unknown ID and server failures. Adapt layers to the technology: Angular uses template, component, injectable service and `HttpClient`; React uses JSX, state, custom Hook and API client; Express.js uses router, controller, service, repository and persistence; Laravel uses routes, controller, validation and Eloquent, with service/repository only when useful. Ecosystem chapters curate maintained, interview-relevant choices by category; distinguish built-in and official options from community packages, compare alternatives, link each option's official documentation and date the last review. Keep chapter-specific requirements in the local `EDITORIAL-PLAN.md`.
+
 ## Editorial Standards
 
 Write in concise, professional Italian.

@@ -12,3 +12,5 @@ Percorso React per il ripasso tecnico Mid/Senior/Expert. Per i concetti generali
 - [Performance e rendering server React](06-performance-server-rendering.md)
 - [Testing accessibilità e sicurezza React](07-testing-accessibility-security.md)
 - [Evoluzione e migrazioni React](08-evolution-migrations.md)
+- [Esempio TodoList end-to-end React](09-todolist-end-to-end.md)
+- [Ecosistema librerie e convenzioni React](10-ecosystem-libraries.md)

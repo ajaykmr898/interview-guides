@@ -91,3 +91,22 @@ Requisiti dei capitoli di questa directory. Seguire le regole comuni in [AGENTS.
 - **P1 — Evoluzione delle API / Form, ref e rendering server:** Actions, ref come prop, Server Components e differenze tra versioni/supporto dei framework.
 - **P1 — Strategia di migrazione / Compatibility e aggiornamento graduale:** dipendenze, codemod, regole degli Hook, test e rollback; distinguere feature introdotta, stabile e default.
 - **P2 — Strategia di migrazione / Casi legacy e interoperabilità:** classi esistenti, librerie non aggiornate e migrazione incrementale senza riscrittura totale.
+
+## `09-todolist-end-to-end.md` — Esempio TodoList end-to-end React
+
+**Da coprire:**
+- **P0 — Modello e contratto REST:** usare il modello `Todo` e gli endpoint condivisi in [AGENTS.md](../../AGENTS.md); chiarire input, output, CRUD e responsabilità del server.
+- **P0 — Struttura e responsabilità / Componenti JSX e API client; Custom Hook e logica applicativa:** mostrare una struttura di progetto minima; componenti per vista/interazioni, API client per la rete e custom Hook per stato e coordinamento delle richieste.
+- **P0 — Flusso CRUD e stato:** seguire caricamento, creazione, modifica e cancellazione dalla UI al client e ritorno; spiegare ownership dello stato e aggiornamento dopo mutazioni.
+- **P1 — Form, errori e cleanup:** validazione dell'input, stati loading/error, fallimenti HTTP, race e cleanup degli Effect o delle richieste quando cambia il contesto.
+- **P1 — Test rappresentativo:** un test minimo di interazione e risultato visibile con il confine di rete controllato.
+- **P2 — Struttura e responsabilità:** separare un service dalla logica del custom Hook solo se esiste logica di business riusabile; non imporre MVC, repository o store globale.
+
+## `10-ecosystem-libraries.md` — Ecosistema librerie e convenzioni React
+
+**Da coprire:**
+- **P0 — Criteri di scelta e stato:** selezione curata per colloqui; distinguere API React/React DOM built-in, strumenti ufficiali, librerie esterne e opzioni facoltative. Per ogni opzione indicare scopo, casi d'uso, alternativa e trade-off, stato, link alla documentazione ufficiale e compatibilità/manutenzione quando rilevanti; aggiornare la data **Last reviewed** dopo la verifica.
+- **P1 — Routing e navigazione; Stato e data fetching:** confrontare responsabilità del core React, del framework e delle librerie esterne pertinenti senza attribuire loro uno standard ufficiale.
+- **P1 — Form e validazione; Testing:** coprire scelte diffuse e pertinenti, con limiti e rinvii ai capitoli concettuali esistenti.
+- **P1 — Performance e sicurezza; Tooling e convenzioni:** includere strumenti e pratiche di adozione comuni, distinguendo funzioni built-in da integrazioni opzionali.
+- **P2 — Criteri di scelta e stato:** segnalare sinteticamente alternative specialistiche, vincoli di versione e segnali di manutenzione; escludere un catalogo esaustivo.
