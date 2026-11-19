@@ -1,6 +1,6 @@
 # Interview Guides
 
-Raccolta modulare di guide tecniche per il ripasso pre-colloquio Senior Frontend, Angular e AI Development. I capitoli raccolgono definizioni, confronti ed esempi sintetici per la revisione tecnica.
+Raccolta modulare di guide tecniche per il ripasso pre-colloquio Mid/Senior/Expert. I capitoli raccolgono definizioni, confronti ed esempi sintetici per la revisione tecnica.
 
 ## Indice
 
@@ -44,6 +44,11 @@ Raccolta modulare di guide tecniche per il ripasso pre-colloquio Senior Frontend
 
 - [API RESTful](topics/api/16-restful-apis.md)
 
+### Database
+
+- [MySQL](topics/databases/17-mysql.md)
+- [MongoDB](topics/databases/18-mongodb.md)
+
 ### Angular
 
 - [Guida Angular e programma di ripasso](guides/angular/README.md)
@@ -51,3 +56,7 @@ Raccolta modulare di guide tecniche per il ripasso pre-colloquio Senior Frontend
 ### React
 
 - [Guida React](guides/react/README.md)
+
+### Express.js
+
+- [Guida Express.js](guides/express/README.md)
