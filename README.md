@@ -1,6 +1,6 @@
 # Interview Guides
 
-Raccolta modulare di guide tecniche per il ripasso pre-colloquio Senior Frontend, Angular e AI Development. I capitoli sono scheletri da completare.
+Raccolta modulare di guide tecniche per il ripasso pre-colloquio Senior Frontend, Angular e AI Development. I capitoli raccolgono definizioni, confronti ed esempi sintetici per la revisione tecnica.
 
 ## Indice
 

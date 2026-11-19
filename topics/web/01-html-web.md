@@ -1,5 +1,7 @@
 # HTML e Web
 
+HTML (HyperText Markup Language) descrive la struttura e il significato dei contenuti di una pagina web; CSS ne definisce la presentazione.
+
 ## Indice
 
 - [Struttura del documento](#struttura-del-documento)
@@ -13,7 +15,7 @@
 
 ### Documento HTML
 
-HTML descrive struttura e significato del contenuto; CSS ne definisce la presentazione. «HTML5» indica la generazione di funzionalità introdotta dopo HTML4, ma lo standard HTML attuale è mantenuto come **Living Standard**, non come versione numerata da selezionare nel documento.
+«HTML5» indica la generazione di funzionalità introdotta dopo HTML4, ma lo standard HTML attuale è mantenuto come **Living Standard**, non come versione numerata da selezionare nel documento.
 
 ```html
 <!DOCTYPE html>
