@@ -47,3 +47,7 @@ Raccolta modulare di guide tecniche per il ripasso pre-colloquio Senior Frontend
 ### Angular
 
 - [Guida Angular e programma di ripasso](guides/angular/README.md)
+
+### React
+
+- [Guida React](guides/react/README.md)
