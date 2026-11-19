@@ -40,6 +40,10 @@ Raccolta modulare di guide tecniche per il ripasso pre-colloquio Senior Frontend
 
 - [Architettura e DevOps](topics/engineering/15-architecture-devops.md)
 
+### API
+
+- [API RESTful](topics/api/16-restful-apis.md)
+
 ### Angular
 
 - [Guida Angular e programma di ripasso](guides/angular/README.md)
